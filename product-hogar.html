@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hogar - Almacenes Only</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="eCommerce HTML Template Free Download" name="keywords">
+        <meta content="eCommerce HTML Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Bootstrap Grid -->
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <!-- Estilos CSS de personalización -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+
+    </head>
+
+    <body>
+        
+        
+        <!-- Nav Bar Start -->
+      <div class="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Tiendas</a>
+                            <div class="dropdown-menu">
+                                <a href="contact.html" class="dropdown-item">Tiendas</a>
+                                <a href="contact.html#nhistoria" class="dropdown-item">Nuestra historia</a>
+                               
+                            </div>
+                        </div>
+                       
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Productos</a>
+                            <div class="dropdown-menu">
+                                <a href="product-list.html" class="nav-item nav-link">Productos</a>
+                                <a href="product-mujer.html" class="dropdown-item">Mujeres y niñas</a>
+                                <a href="product-hombre.html" class="dropdown-item">Hombres y niños</a>
+                                <a href="product-hogar.html" class="dropdown-item">Hogar</a>
+                            </div>
+                        </div>
+                       
+                       
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Acceso</a>
+                            <div class="dropdown-menu">
+                                <a href="login.html" class="dropdown-item">Empleados</a>
+                                <a href="proveedores.html" class="dropdown-item">Proveedores</a>
+                                <a href="usuarios.html" class="dropdown-item">Usuarios</a>
+                               
+                            </div>
+                        </div>
+                
+                    </div>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav Bar End -->        
+           
+        
+        <!-- Bottom Bar Start -->
+        <div class="bottom-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input type="text" placeholder="¿Que estás buscando?...">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <!-- Carrito de compras y sus items -->
+                        <div class='carrito'>
+                          
+                          <p class="carrito-total">
+                            <span class="simpleCart_quantity">0</span> Producto(s) <span class="simpleCart_total">$0.00</span>
+                          </p>
+                
+                          <div class="bolsa">
+                            <div class="simpleCart_items"></div>
+                            <div class="opciones">
+                              <a class="boton simpleCart_empty" href="javascript:void(0)">Vaciar carrito</a>
+                              <a class="boton simpleCart_checkout" href="#">| Pagar</a>
+                            </div>
+                          </div>
+                
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Bar End --> 
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container-fluid">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Productos</a></li>
+                    <li class="breadcrumb-item active">Lista Productos</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        <!-- Product Detail Start -->
+        <div class="product-detail">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <!--  Contenedor con el nombre principal (simpleCart_shelfItem)
+                              todos los items de un loop lo deben de tener -->
+                            <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+                              <!-- Nombre del producto se obtiene al agregar la clase (item_name) -->
+                              <h2 class="item_name">Tapete Baño</h2>
+                              <!-- Imagen del producto se obtiene al agregar la clase (item_image) -->
+                              <img class="item_image" src="img/tapete1.jpg" alt="Auto Azul"/>
+                              <!-- Cantidad a requerir del producto se obtiene al agregar la clase (item_Quantity) -->
+                              <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+                              <!-- Precio del producto se obtiene al agregar la clase (item_price) -->
+                              <div class="item_price">$30,999</div>
+                              <!-- Añadir el producto al carrito, se logra agregando la clase (item_add) -->
+                              <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+                      
+                            </div>
+                      
+                            <div id="bzn" class="col-md-6 col-lg-4 simpleCart_shelfItem">
+                              <h2 class="item_name">Toalla Baño</h2>
+                      
+                              <img class="item_image" src="img/Toalla.jpg" alt="Auto Naranja"/>
+                              <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+                              <div class="item_price">$32,000</div>
+                              <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+                      
+                            </div>
+                            <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+                      
+                              <h2 class="item_name">Cama doble</h2>
+                              <img class="item_image" src="img/hogar.jpg" alt="Auto Rojo"/>
+                              <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+                              <div class="item_price">$87,999</div>
+                              <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+                      
+                            </div>
+                            
+                           
+                            <div id="jeanHombre" class="col-md-6 col-lg-4 simpleCart_shelfItem">
+                      
+                              <h2 class="item_name">Set baño</h2>
+                              <img class="item_image" src="img/tapete1.jpg" alt="Auto Gris"/>
+                              <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+                              <div class="item_price">$30,000</div>
+                              <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+                      
+                            </div>
+                            <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+                      
+                                <h2 class="item_name">Tapete Sala</h2>
+                                <img class="item_image" src="img/tapete-sala.jpg" alt="Auto Gris"/>
+                                <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+                                <div class="item_price">$165,000</div>
+                                <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+                        
+                              </div>
+                              <div class="col-md-6 col-lg-4 simpleCart_shelfItem">
+                      
+                                <h2 class="item_name">Mantel Sala</h2>
+                                <img class="item_image" src="img/mantel-sala.jpg" alt="Auto Gris"/>
+                                <input class="item_Quantity" type="number" min="1" max="10" value="1"/>
+                                <div class="item_price">$85,000</div>
+                                <a class="item_add" href="javascript:;"> Añadir al carrito </a>
+                        
+                              </div>
+
+                          </div>
+                        
+                      
+                            
+                        
+                    </div>
+                    
+                    <!-- Side Bar Start -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2 class="title">Categorías</h2>
+                            <nav class="navbar bg-light">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product-mujer.html"><i class="fa fa-female"></i>Mujeres & Niñas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product-hombre.html"><i class="fa fa-child"></i>Hombres & Niños</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="product-hogar.html"><i class="fa fa-home"></i>Hogar</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="sidebar-widget brands">
+                            <br>
+                            <h2 class="title">Nuestras marcas</h2>
+                            <ul>
+                                <li><a href="#">OnlyW </a><span>(45)</span></li>
+                                <li><a href="#">Promoda </a><span>(34)</span></li>
+                                <li><a href="#">PatPrimo </a><span>(67)</span></li>
+                                <li><a href="#">PuntoBlanco</a><span>(74)</span></li>
+                                <li><a href="#">Bronzini </a><span>(89)</span></li>
+                                <li><a href="#">OnlyKids</a><span>(28)</span></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-widget tag">
+                            <h2 class="title">Etiquetas</h2>
+                            <a href="#">Tapetes</a>
+                            <a href="#">Cortinas de baño</a>
+                            <a href="#">Toallas de mano</a>
+                            <a href="#">Cojines</a>
+                            <a href="#">Manteles</a>
+                            <a href="#">Individuales</a>
+                            <a href="#">Porta Vasos</a>
+                            <a href="#">Servilletas</a>
+                            <a href="#">Juego de baño</a>
+                            <a href="#">velo</a>
+                            <a href="#">Cortina pesada</a>
+                            <a href="#">toallas de cuerpo</a>
+                        </div>
+                    </div>
+                    <!-- Side Bar End -->
+                </div>
+            </div>
+        </div>
+        <!-- Product Detail End -->
+        
+    </div>
+    <!-- Side Bar End -->
+      
+        
+      
+        <!-- comienzo footer-->
+<div class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                    <h2>Síguenos</h2>
+                    <div class="contact-info">
+                        <div class="social">
+                            <a href="https://es-la.facebook.com/AlmacenesOnly/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/company/almacenes-only/"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/almacenes_only/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-widget">
+                    <h2 class="title">Categorías</h2>
+                    <nav class="navbar bg-light">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="product-mujer.html"><i class="fa fa-female"></i>Mujeres & Niñas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product-hombre.html"><i class="fa fa-child"></i>Hombres & Niños</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="product-hogar.html"><i class="fa fa-home"></i>Hogar</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="payment-method">
+                    <h2>Aceptamos</h2>
+                    <img src="img/payment-method.png" alt="Payment Method" />
+                </div>
+            </div>
+        </div>
+        
+        <div class="row payment align-items-center">
+        </div>
+    </div>
+</div>
+<!-- fin footer-->
+
+<!-- comienzo footer derechos-->
+<div class="footer-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-15 copyright">
+                <p>Copyright &copy; Almancenes Only. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fin footer derechos-->
+ 
+       
+        <!-- Footer Bottom End -->       
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+        
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <!-- Agregamos la librería Simple Cart -->
+        <script src="js/simpleCart.min.js"></script>
+        <!-- Código JS de inicialización  -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
